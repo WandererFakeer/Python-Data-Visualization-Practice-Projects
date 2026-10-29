@@ -84,8 +84,6 @@ tesla_data.reset_index(inplace = True)
 tesla_data.head()
 ```
 
-![Question 1](https://github.com/user-attachments/assets/7abf612f-171c-43fa-8e14-d7f5ff6a9499)
-
 
 ## 02. Question 2: Use Webscraping to Extract Tesla Revenue Data
 
@@ -150,9 +148,6 @@ tesla_revenue.tail()
 ```
 
 
-![Question 2](https://github.com/user-attachments/assets/1b01a9ae-d811-4c6d-8504-2c7df122bd3a)
-
-
 ## 03. Question 3: Use yfinance to Extract Stock Data
 
 ### (I). Using the `Ticker` function enter the ticker symbol of the stock we want to extract data on to create a ticker object. The stock is GameStop and its ticker symbol is `GME`.
@@ -174,8 +169,6 @@ gme_data.reset_index(inplace = True)
 
 gme_data.head()
 ```
-
-![Question 3](https://github.com/user-attachments/assets/3a277572-82d5-47e8-bb71-3e9a73b41720)
 
 
 ## 04. Question 4: Use Webscraping to Extract GME Revenue Data
@@ -236,8 +229,6 @@ gme_revenue["Revenue"] = gme_revenue["Revenue"].str.replace(r",|\$", "", regex =
 gme_revenue.tail()
 ```
 
-![Question 4](https://github.com/user-attachments/assets/656894d6-cbfa-4049-b45a-08c5e4c3c150)
-
 
 ## 05. Question 5: Plot Tesla Stock Graph
 
@@ -247,8 +238,6 @@ gme_revenue.tail()
 make_graph(tesla_data, tesla_revenue, "Tesla's Historical Share Price and Historical Revenue (Till June 2021)")
 ```
 
-![Question 5](https://github.com/user-attachments/assets/dd974762-b2ff-42b6-b38d-eca81b1b108e)
-
 
 ## 06. Question 6: Plot GameStop Stock Graph
 
@@ -257,5 +246,3 @@ make_graph(tesla_data, tesla_revenue, "Tesla's Historical Share Price and Histor
 ```
 make_graph(gme_data, gme_revenue, "GameStop's Historical Share Price and Historical Revenue (Till June 2021)")
 ```
-
-![Question 6](https://github.com/user-attachments/assets/238eab86-586e-47b4-96ad-91392257e95b)
